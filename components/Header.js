@@ -15,14 +15,12 @@ const Header = () => (
       <Link href="/">
         <a className={styles.logo}>
           <Image src="/logo.svg" width="32" height="32" alt="Logo" />
-          <span className={styles.appName}>Your application</span>
+          <span className={styles.appName}>custom demo</span>
         </a>
       </Link>
     </div>
     <div className={styles.right}>
-      <SignedOut>
-        <Link href="/sign-in">Sign in</Link>
-      </SignedOut>
+      <SignedOut>You're signed out</SignedOut>
       <SignedIn>
         <UserButton />
       </SignedIn>
